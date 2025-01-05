@@ -54,4 +54,20 @@ void main() {
 
   var listaCombinada = [1, 2, 3, 4, ...listaNumerosSpreadB];
   print(listaCombinada);
+
+// Collection if
+  var promocaoAtiva = true;
+
+  var produtos = [
+    'Cerveja',
+    'Refrigerente',
+    if (promocaoAtiva) 'Suco de laranja'
+  ];
+
+  print(produtos);
+
+// Collection for
+  var listaInt = [1, 2, 3];
+  var listaString = ['#0', for (var i in listaInt) '#$i'];
+  print(listaString);
 }
